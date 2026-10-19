@@ -24,7 +24,6 @@ export default function NavigationFAB({
   const handleNextSection = () => {
     const currentIndex = sections.indexOf(activeSection);
     const nextSection = sections[(currentIndex + 1) % sections.length];
-
     onScrollToSection(nextSection);
   };
 
@@ -64,7 +63,7 @@ export default function NavigationFAB({
               pathLength:
                 (sections.indexOf(activeSection) + 1) / sections.length,
             }}
-            transition={{ duration: 0.8, ease: 'easeInOut' }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             style={{
               strokeDasharray: '175.93',
               strokeDashoffset: 0,
@@ -100,7 +99,7 @@ export default function NavigationFAB({
                 'linear-gradient(315deg, rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1))',
               ],
             }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
+            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
           />
 
           {/* Icon container */}
@@ -111,8 +110,8 @@ export default function NavigationFAB({
                 scale: [1, 1.1, 1],
               }}
               transition={{
-                rotate: { duration: 8, repeat: Infinity, ease: 'linear' },
-                scale: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
+                rotate: { duration: 8, repeat: Infinity, ease: "linear" },
+                scale: { duration: 2, repeat: Infinity, ease: "easeInOut" },
               }}
               className="text-2xl filter drop-shadow-sm"
             >
