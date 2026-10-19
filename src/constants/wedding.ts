@@ -1,13 +1,13 @@
 export const WEDDING_CONFIG = {
   date: new Date('2025-10-15T16:00:00'),
   bride: {
-    name: 'Mio',
-    fullName: 'Akiyama Mio',
+    name: 'Kiruthiga',
+    fullName: 'Kiruthiga A',
     photo: '/assets/images/bride-circle.png',
   },
   groom: {
-    name: 'Fiqri',
-    fullName: 'M Fiqri Haikhar Anwar',
+    name: 'Harikrishnan',
+    fullName: 'Harikrishnan S',
     photo: '/assets/images/groom-circle.png',
   },
   venue: {
