@@ -34,7 +34,7 @@ export const EventSchedule = () => {
       description: t('schedule.Breakfast'),
     },
     {
-      time: 'Wedding 9:30 AM',
+      time: 'Wedding 9:00 AM',
       event: t('schedule.wedding-ceremony'),
       description: t('schedule.vows'),
     },

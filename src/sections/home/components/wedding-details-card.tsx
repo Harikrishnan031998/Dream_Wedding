@@ -219,7 +219,7 @@ export const WeddingDetailsCard = ({
 
         {/* Venue Cards */}
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Reception Card */}
+          {/* Reception Card 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -267,9 +267,9 @@ export const WeddingDetailsCard = ({
                 📍 {t('details.get-directions')}
               </motion.a>
             </div>
-          </motion.div>
+          </motion.div>*/}
 
-          {/* Ceremony Card */}
+          {/* Ceremony Card 
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -317,7 +317,7 @@ export const WeddingDetailsCard = ({
                 📍 {t('details.get-directions')}
               </motion.a>
             </div>
-          </motion.div>
+          </motion.div>*/}
         </div>
 
         {/* Additional Info 
