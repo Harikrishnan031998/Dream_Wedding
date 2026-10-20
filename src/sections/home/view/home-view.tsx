@@ -9,7 +9,6 @@ import {
   CountdownTimer,
   VenueInformation,
   EventSchedule,
-  RSVP,
   ClosingMessage,
   FloatingNavigation,
   NavigationFAB,
@@ -106,10 +105,10 @@ export default function HomeView() {
         <GalleryPreview />
       </section>*/}
 
-      {/* RSVP Section */}
+      {/* RSVP Section 
       <section id="rsvp" className="relative">
         <RSVP />
-      </section>
+      </section>*/}
 
       {/* Closing Message */}
       <section id="closing" className="relative">

@@ -219,56 +219,6 @@ export const WeddingDetailsCard = ({
 
         {/* Venue Cards */}
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Ceremony Card */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100 group hover:shadow-2xl transition-all duration-300"
-          >
-            <div className="text-center mb-6">
-              <div className="inline-block bg-gradient-to-r from-purple-100 to-indigo-100 rounded-full p-4 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <div className="text-4xl">⛪</div>
-              </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-                {t('details.ceremony')}
-              </h3>
-              <div className="w-16 h-px bg-purple-400 mx-auto"></div>
-            </div>
-
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">
-                  {venue.ceremony.name}
-                </h4>
-                <p className="text-gray-600 text-xs sm:text-sm">
-                  {venue.ceremony.address}
-                </p>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-4">
-                <p className="font-medium text-gray-800 text-sm sm:text-base">
-                  {t('details.time')}
-                </p>
-                <p className="text-purple-600 font-semibold text-sm sm:text-base">
-                  {venue.ceremony.time}
-                </p>
-              </div>
-
-              <motion.a
-                href={generateMapLink(venue.ceremony.name)}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
-              >
-                📍 {t('details.get-directions')}
-              </motion.a>
-            </div>
-          </motion.div>
-
           {/* Reception Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -318,9 +268,59 @@ export const WeddingDetailsCard = ({
               </motion.a>
             </div>
           </motion.div>
+
+          {/* Ceremony Card */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100 group hover:shadow-2xl transition-all duration-300"
+          >
+            <div className="text-center mb-6">
+              <div className="inline-block bg-gradient-to-r from-purple-100 to-indigo-100 rounded-full p-4 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl">⛪</div>
+              </div>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                {t('details.ceremony')}
+              </h3>
+              <div className="w-16 h-px bg-purple-400 mx-auto"></div>
+            </div>
+
+            <div className="space-y-4 text-center">
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">
+                  {venue.ceremony.name}
+                </h4>
+                <p className="text-gray-600 text-xs sm:text-sm">
+                  {venue.ceremony.address}
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl p-4">
+                <p className="font-medium text-gray-800 text-sm sm:text-base">
+                  {t('details.time')}
+                </p>
+                <p className="text-purple-600 font-semibold text-sm sm:text-base">
+                  {venue.ceremony.time}
+                </p>
+              </div>
+
+              <motion.a
+                href={generateMapLink(venue.ceremony.name)}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
+              >
+                📍 {t('details.get-directions')}
+              </motion.a>
+            </div>
+          </motion.div>
         </div>
 
-        {/* Additional Info */}
+        {/* Additional Info 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -350,7 +350,7 @@ export const WeddingDetailsCard = ({
               </div>
             </div>
           </div>
-        </motion.div>
+        </motion.div>*/}
       </div>
     </div>
   );
