@@ -9,11 +9,8 @@ interface NavigationFABProps {
 
 const sections = [
   'hero',
-  'couple',
   'details',
   'venue',
-  'gallery',
-  'rsvp',
   'closing',
 ];
 

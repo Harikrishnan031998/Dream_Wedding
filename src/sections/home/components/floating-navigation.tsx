@@ -41,8 +41,8 @@ export default function FloatingNavigation({
           ))}
 
           {/* Language Toggle */}
-          <div className="w-px h-6 bg-gray-200 mx-1 sm:mx-2"></div>
-          <LanguageToggle />
+          {/*<div className="w-px h-6 bg-gray-200 mx-1 sm:mx-2"></div>*/}
+          {/*<LanguageToggle />*/}
         </div>
 
         <FloatingParticles />

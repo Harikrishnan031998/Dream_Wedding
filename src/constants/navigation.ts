@@ -37,12 +37,6 @@ export const NAVIGATION_SECTIONS = [
     gradient: 'from-rose-500 to-pink-500',
   },
   {
-    id: 'couple',
-    labelKey: 'navigation.couple',
-    icon: '💕',
-    gradient: 'from-pink-500 to-rose-500',
-  },
-  {
     id: 'details',
     labelKey: 'navigation.details',
     icon: '📅',
@@ -53,12 +47,6 @@ export const NAVIGATION_SECTIONS = [
     labelKey: 'navigation.venue',
     icon: '📍',
     gradient: 'from-indigo-500 to-blue-500',
-  },
-  {
-    id: 'gallery',
-    labelKey: 'navigation.gallery',
-    icon: '📸',
-    gradient: 'from-blue-500 to-cyan-500',
   },
   {
     id: 'rsvp',

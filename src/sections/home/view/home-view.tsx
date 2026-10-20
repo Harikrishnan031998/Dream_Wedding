@@ -5,13 +5,11 @@ import { useScrollSpy } from '@/hooks/use-scroll-spy';
 import { LetterAnimation } from '@/components';
 import {
   HeroSection,
-  CoupleIntroduction,
   WeddingDetailsCard,
   CountdownTimer,
   VenueInformation,
   EventSchedule,
   RSVP,
-  GalleryPreview,
   ClosingMessage,
   FloatingNavigation,
   NavigationFAB,
@@ -79,14 +77,14 @@ export default function HomeView() {
         />
       </section>
 
-      {/* Couple Introduction */}
+      {/* Couple Introduction 
       <section id="couple" className="relative">
         <CoupleIntroduction
           bride={WEDDING_CONFIG.bride}
           groom={WEDDING_CONFIG.groom}
           isVisible={isLoaded}
         />
-      </section>
+      </section>*/}
 
       {/* Wedding Details */}
       <section id="details" className="relative">
@@ -103,10 +101,10 @@ export default function HomeView() {
         <EventSchedule />
       </section>
 
-      {/* Gallery Preview */}
+      {/* Gallery Preview 
       <section id="gallery" className="relative">
         <GalleryPreview />
-      </section>
+      </section>*/}
 
       {/* RSVP Section */}
       <section id="rsvp" className="relative">
